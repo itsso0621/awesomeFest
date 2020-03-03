@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>AwesomeFest 2020</title>
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div id="title">
+        <h1>AwesomeFest</h1>
+      </div>
+      <div id="header2">
+        <h1>AwesomeFest</h1>
+        <h2>Coming to Barrie, Ontario</h2>
+        <h3>Summer 2020</h3>
+      </div>
+    </header>
+    <div class="wrapper">
+      <main>
+        <div class="imagesParent">
+         <p> A 2 day festival experience featuring all your favourite bands right here in your own backyard.</p>
+          <div class="images">
+            <div>
+              <img src="images/awesomefest-2.jpg" alt="awesomefest DJ picture">
+            </div>
+            <div>
+            <img src="images/awesomefest.jpg" alt="awesomefest concert picture">
+            </div>      
+          </div>
+        </div>
+        <div>
+         <h3> Tickets </h3>
+         <table>
+          <thead>
+            <tr>
+              <th>Ticket Type</th>
+              <th>Description</th>
+              <th>Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ultra Awesome Ticket</td>
+              <td>2 Day Camping Pass in VIP, exclusive div, VIP backstage access, Awesomefest Swag</td>
+              <td>$600.00</td>
+            </tr>
+            <tr>
+              <td>Super Awesome Ticket</td>
+              <td>1 Day Camping pass, Awesomefest Swag</td>
+              <td>$400.00</td>
+            </tr>
+            <tr>
+              <td>Awesome Ticket</td>
+              <td>One day access to main and side stage. Awesomefest beanie.</td>
+              <td>$200.00</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        <div>
+          <div>
+            <p id="book">TICKETS <br>
+              <small>*Please fill out the form below to purchase tickets*</small>
+            </p>
+            <img src="images/awesomefest3.jpg" alt="awesomefest concert picture" id="formImg">
+          </div>
+        </div>
+        <div>
+          <form>
+            <fieldset id="PersonalInfo">
+              <label for="firstName">First Name: </label>
+              <input type="text" name="firstName" id="firstName" required><br>
+              <label for="lastName">Last Name: </label>
+              <input type="text" name="firstName" id="lastName" required><br>
+              <label for="email">E-mail: </label>
+              <input type="email" name="email" id="email" required><br>
+              <label for="phoneNumber">Phone Number: </label>
+              <input type="number" name="phoneNumber" id="phoneNumber" required>
+            </fieldset>
+            <fieldset id="ticketRadio">
+            <!-- radio button for ticket type  -->
+              <label class="ticketType" >Ticket Type: </label><br>
+              <div>
+                <input type="radio" id="UAT" name="ticket" value="UAT">
+                <label for="UAT" style="font-size: medium;"> Ultra Awesome Ticket</label>
+                <br>
+                <input type="radio" id="SAT" name="ticket" value="SAT">
+                <label for="SAT" style="font-size: medium;"> Super Awesome Ticket</label>
+                <br>
+                <input type="radio" id="AT" name="ticket" value="AT">
+                <label for="AT" style="font-size: medium;"> Awesome Ticket</label>
+              </div>
+           </fieldset>
+            <!-- Choose Card  -->
+            <br>
+            <fieldset id="Card">
+              <label for="creditCard">Credit Card Type: </label>
+              <select name="creditCard" id="creditCard">
+                <option value="0">--Choose your card for the payment--</option>
+                <option value="1">VISA</option>
+                <option value="2">MasterCard</option>
+                <option value="3">American Express</option>
+              </select>
+              <br>
+              <br>
+              <div id="CcNumber">
+                <label for="CcNum">CC Number: </label>
+                <input type="password" id="CcNum" name="CcNum" maxlength="16" required>
+              </div>
+            </fieldset>
+              <input  type="submit" value="Submit" id="submit">
+          </form>
+          <!-- need form here, must include fields for first name, last name, email, phonenumber,  ticket type (dropdown or radio boxes), credit card type (dropdown) and cc number.-->
+        </div>
+      </main>
+      <footer>
+        <p> Copyright AwesomeFest 2020 &copy;. All Rights Reserved.</p>
+      </footer>
+    </div><!--end wrapper-->
+  </body>
+</html>
